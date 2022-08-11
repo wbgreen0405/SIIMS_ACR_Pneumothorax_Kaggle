@@ -21,13 +21,13 @@ the models are built on the backbone of EfficientNet B4 and Xception architectur
 Then, we add some tricks to our data augmentation by adding a bounding box crop that dissect the region of chest to remove any redundant pixels. 
 This will allow the machine to focus and learn better on the identifying features of the chest. However, to get the bounding boxes, 
 we built a Faster R-CNN model with 1000 hand labelled targets provided by Dr Konya. 
-The original bounding box labels and the one from our model can be accessed in the [boundingbox_csv](https://github.com/DW-Hwang/SIIMS_ACR_Pneumothorax-Kaggle/tree/master/boundingbox_csv) folder.
+The original bounding box labels and the one from our model can be accessed in the [boundingbox_csv](https://github.com/wbgreen0405/SIIMS_ACR_Pneumothorax_Kaggle/tree/main/boundingbox_csv) folder.
 Additionally, the results from our model is shown below.
 
-<img src="https://github.com/DW-Hwang/SIIMS_ACR_Pneumothorax-Kaggle/blob/master/screenshots/image1.png" width= "899" height="580"/>
+<img src="https://github.com/wbgreen0405/SIIMS_ACR_Pneumothorax_Kaggle/blob/main/screenshots/image1.png" width= "899" height="580"/>
 
 Then, we ensembled our model by stacking the three models with a fully connected layers from the bottleneck output of the three models,
-where we froze up the front part and train only on the fully connected layers. At last, we use it to predict our classification results. The details to the training can be accessed [here](https://github.com/DW-Hwang/SIIMS_ACR_Pneumothorax-Kaggle/blob/master/classification/Classification.ipynb)
+where we froze up the front part and train only on the fully connected layers. At last, we use it to predict our classification results. The details to the training can be accessed [here](https://github.com/wbgreen0405/SIIMS_ACR_Pneumothorax_Kaggle/blob/main/classification/Classification.ipynb)
 
 
 ## Segmentation Model (Part 2)
@@ -41,8 +41,8 @@ In this section, we used almost the same data augmentation strategy with the bou
 
 As a quick supplementary reference, a U-Net plus plus is a new general purpose image segmentation architecture for more accurate image segmentation. UNet++ consists of U-Nets of varying depths whose decoders are densely connected at the same resolution via the redesigned skip pathways, which aim to address two key challenges of the U-Net: 1) unknown depth of the optimal architecture and 2) the unnecessarily restrictive design of skip connections.
 
-<img src="https://github.com/DW-Hwang/SIIMS_ACR_Pneumothorax-Kaggle/blob/master/screenshots/UNet.jpg" width= "640" height="480"/>
+<img src="https://github.com/wbgreen0405/SIIMS_ACR_Pneumothorax_Kaggle/blob/main/screenshots/UNet.jpg" width= "640" height="480"/>
 
-Similarly, we performed ensembling with stacking of our four models to obtain our final segmentation model. The details to the training can be accessed [here](https://github.com/DW-Hwang/SIIMS_ACR_Pneumothorax-Kaggle/blob/master/Segmentation/Segmentation.ipynb)
+Similarly, we performed ensembling with stacking of our four models to obtain our final segmentation model. The details to the training can be accessed [here](https://github.com/wbgreen0405/SIIMS_ACR_Pneumothorax_Kaggle/blob/main/Segmentation/Segmentation.ipynb)
 
 
