@@ -1,7 +1,7 @@
-# SIIM-ACR Pneumothorax Segmentation (Kaggle)
+# Kaggle SIIM-ACR Pneumothorax Segmentation 
 **Identify Pneumothorax disease in chest x-rays**
 
-## My Silver Medal Solution (Ranked: 47 /1475)
+## Our Bronze  Medal Solution (Ranked: 127 /1475)
 This competition is being hosted by the Society for Imaging Informatics in Medicine (SIIM) in coordination with the Annual Conference on Machine Intelligence in Medical Imaging (C-MIMI)
 The top winning teams in the competition will be awarded with monetary prizes up to **$30,000**,
 and each winning team will be invited and strongly encouraged to attend the conference with waived registration fees,
